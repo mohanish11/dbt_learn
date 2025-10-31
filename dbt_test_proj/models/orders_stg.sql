@@ -3,7 +3,7 @@ SELECT
     OrderDate,
     CustomerID,
     EmployeeID,
-    StoreID,
+    StoreID as store_id,
     Status AS StatusCD,
     CASE
         WHEN Status = '01' THEN 'In Progress'
