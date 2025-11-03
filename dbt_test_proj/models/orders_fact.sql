@@ -3,7 +3,7 @@ SELECT
     O.OrderDate,
     O.CustomerID,
     O.EmployeeID,
-    O.StoreID,
+    O.store_id,
     O.StatusCD,
     O.StatusDesc,
     COUNT(DISTINCT O.OrderID) AS OrderCount,
@@ -19,7 +19,7 @@ GROUP BY
     O.OrderDate,
     O.CustomerID,
     O.EmployeeID,
-    O.StoreID,
+    O.store_id,
     O.StatusCD,
     O.StatusDesc,
     O.Updated_at
